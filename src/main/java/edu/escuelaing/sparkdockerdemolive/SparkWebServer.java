@@ -27,7 +27,7 @@ public class SparkWebServer {
             double result = Math.cos(angle);
             return result;
         });
-        get("palindormo", (req,res) -> {
+        get("palindromo", (req,res) -> {
             String word = req.queryParams("word");
             StringBuffer buffer =  new StringBuffer(word);
             buffer.reverse();

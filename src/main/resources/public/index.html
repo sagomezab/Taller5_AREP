@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>OPERACIONES</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <title>OPERACIONES</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-    <div class="top">
-      <h1>OPERACIONES</h1>
-      <img id="image">
-    </div>
-        <form class="form" id="form" action="/sin">
-            <label for="postname">Nombre:</label><br>
-            <input type="text" id="sin1" name="s" placeholder="Ingresa el nombre" required><br>
-            <input class="btn" type="button" value="Buscar" id="sin">
-        </form>
-    <div class="container" id="postrespmsg"></div>
-    </div>
-        <form class="form1" action="/cos">
-            <label for="postname">Nombre:</label><br>
-            <input type="text" id="cos1" name="s" placeholder="Ingresa el nombre" required><br>
-            <input class="btn" type="button" value="Buscar" id="cos">
-        </form>
-    <div class="container" id="postrespmsg1"></div>
-    </div>
-        <form class="form2" action="/palindormo">
-            <label for="postname">Nombre:</label><br>
-            <input type="text" id="palindromo1" name="s" placeholder="Ingresa el nombre" required><br>
-            <input class="btn" type="button" value="Buscar" id="palindromo" >
-        </form>
-    <div class="container" id="postrespmsg2"></div>
-    </div>
-        <form class="form3" action="/dimension">
-            <label for="postname">Nombre:</label><br>
-            <input type="text" id="dimension1" name="s" placeholder="Ingresa el nombre" required><br>
-            <input class="btn" type="button" value="Buscar" id="dimension">
-        </form>
-    <div class="container" id="postrespmsg3"></div>
-  </body>
+<body>
+  <div class="top">
+    <h1>OPERACIONES</h1>
+    <img id="image">
+  </div>
+
+  <div class="operacion">
+    <form class="form" id="form" action="/sin">
+      <label for="postname">Calcule el Seno:</label><br>
+      <input type="text" id="sin1" name="s" placeholder="Ingrese el número" required><br>
+      <input class="btn" type="button" value="Buscar" id="sin" onclick="enviarSin()"><br><br>
+      <div id="resultado1"></div>
+    </form>
+  </div>
+
+  <hr>
+
+  <div class="operacion">
+    <form class="form1" action="/cos">
+      <label for="postname">Calcule el Coseno:</label><br>
+      <input type="text" id="cos1" name="s" placeholder="Ingrese el número" required><br>
+      <input class="btn" type="button" value="Buscar" id="cos" onclick="enviarCos()"><br><br>
+      <div id="resultado2"></div>
+    </form>
+  </div>
+
+  <hr>
+
+  <div class="operacion">
+    <form class="form2" action="/palindormo">
+      <label for="postname">Palíndromo:</label><br>
+      <input type="text" id="palindromo1" name="s" placeholder="Ingresa la palabra" required><br>
+      <input class="btn" type="button" value="Buscar" id="palindromo" onclick="enviarPalindromo()"><br><br>
+      <div id="resultado3"></div>
+    </form>
+  </div>
+
+  <hr>
+
+  <div class="operacion">
+    <form class="form3" action="/dimension">
+      <label for="postname">Calcular Dimensión del Vector:</label><br>
+      <input type="text" id="dimension1" name="s" placeholder="Ingrese el número real 1" required><br>
+      <input type="text" id="dimension2" name="s" placeholder="Ingrese el número real 2" required><br>
+      <input class="btn" type="button" value="Buscar" id="dimension" onclick="enviarDimension()"><br><br>
+      <div id="resultado4"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

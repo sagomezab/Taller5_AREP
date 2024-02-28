@@ -104,7 +104,9 @@ Asi se ve desde el CMD:
 ![](img/dockerPush.png)
 
 Luego de haber realizado esos pasos debe visualizar en su repositorio de DockerHUB la imagen
-
+```
+https://hub.docker.com/repository/docker/sagomezab/taller5arep/general
+```
 ![](img/dockerHub.png)
 
 Para ejecutar la imagen desde el repositorio debe ingresar el siguiente comando, debe tener en cuenta que si tiene el puerto *34001* en uso debe cambiarlo para ejecutar la aplicación:
